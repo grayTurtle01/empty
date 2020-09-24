@@ -12,11 +12,9 @@ function loadSetting(){
 
 }
 
-window.onload = loadSetting
-
 function toogleBackGround(){
   body = document.querySelector('body')
-
+  
   color = body.style.color
   
   if( color == 'white'){
@@ -60,3 +58,4 @@ function handleClickButton(){
 
 boton = document.querySelector('button')
 boton.onclick= handleClickButton
+window.onload = loadSetting
