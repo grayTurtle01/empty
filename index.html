@@ -25,10 +25,47 @@
 </head>
 <body>
   <h1> Hello GitHub</h1>
+    <div>
+      <button>Toggle BackGround</button>
+    </div>
   <img src="images/octoCat.png" alt="Simple octo Cat">
   <img src="images/gitHub-logo.png" alt="Logo GitHub">
   <img src="images/magicCat.png" alt="magic Cat">
   <img src="images/studentCat.jpg" alt="student Cat">
+
+  <script>
+
+    function loadSetting(){
+      body = document.querySelector('body')
+      body.style.background = 'black'
+      body.style.color = 'white'
+    }
+
+    window.onload = loadSetting
+
+    function toogleBackGround(){
+      body = document.querySelector('body')
+
+      color = body.style.color
+      console.log(color)
+      
+      if( color == 'white'){
+        body.style.background = 'white'
+        body.style.color = 'black'
+      }
+      else{
+        body.style.background = 'black'
+        body.style.color = 'white'
+      }
+    }
+
+
+
+    boton = document.querySelector('button')
+    boton.onclick = toogleBackGround
+
+  </script>
+
 
 </body>
 </html>
