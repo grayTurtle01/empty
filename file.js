@@ -8,7 +8,19 @@ function loadSetting(){
   for(i = 0; i < images.length; i++){
     image = images[i]
     image.style.border = '1px solid white'
+    image.style.width = '250px'
+    image.style.height = '250px'
   } 
+
+  //botones
+  botonera = document.getElementById('botonera')
+  botonera.style.textAlign = 'center'
+
+  //imagenes
+  container = document.getElementById('container')
+  //container.style.border = '1px solid red'
+
+  container.style.textAlign = 'center'
 
 }
 
