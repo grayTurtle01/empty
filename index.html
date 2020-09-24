@@ -9,6 +9,7 @@
       width: 300px;
       border: 1px solid black;
       margin: 5px;
+      border-radius: 10px;
     }
     h1{
       text-align: center;
@@ -33,38 +34,7 @@
   <img src="images/magicCat.png" alt="magic Cat">
   <img src="images/studentCat.jpg" alt="student Cat">
 
-  <script>
-
-    function loadSetting(){
-      body = document.querySelector('body')
-      body.style.background = 'black'
-      body.style.color = 'white'
-    }
-
-    window.onload = loadSetting
-
-    function toogleBackGround(){
-      body = document.querySelector('body')
-
-      color = body.style.color
-      console.log(color)
-      
-      if( color == 'white'){
-        body.style.background = 'white'
-        body.style.color = 'black'
-      }
-      else{
-        body.style.background = 'black'
-        body.style.color = 'white'
-      }
-    }
-
-
-
-    boton = document.querySelector('button')
-    boton.onclick = toogleBackGround
-
-  </script>
+  <script src="file.js"></script>
 
 
 </body>
